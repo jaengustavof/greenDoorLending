@@ -1,0 +1,1063 @@
+/* FUENTES PERSONALIZADAS */
+@font-face {
+	font-family: 'DM Serif Text'; /*nombre de tipografia entre comillas*/
+	font-display: auto;
+	src: url('../rsc/fonts/DMSerifText-Regular.ttf') format('truetype'); /*.otf >> format:'opentype' | .ttf >> format: 'truetype'*/
+
+}
+
+@font-face {
+	font-family: 'Overpass Mono'; /*nombre de tipografia entre comillas*/
+	font-display: auto;
+	src: url('../rsc/fonts/OverpassMono-Regular.ttf') format('truetype'); /*.otf >> format:'opentype' | .ttf >> format: 'truetype'*/
+
+}
+
+/* VARIABLES */
+
+:root {}
+
+/* CSS COMUN */
+
+*{
+	
+	box-sizing: border-box;
+
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Overpass Mono';
+		overflow-x: hidden
+	
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'DM Serif Text'; 
+}
+
+h1, h2 {
+	font-size: 60px;
+	font-weight: normal;
+	line-height: 72px;
+	margin: 0;
+}
+
+h3 {
+	font-weight: normal;
+	font-size: 40px;
+	line-height: 48px;
+	margin: 0;
+}
+
+
+p {
+	font-size: 20px;
+	line-height: 26px;
+	margin: 0;
+}	
+
+.container {
+	width: 100%;
+
+	max-width: 1920px;
+}
+
+.menu {
+	width: 100%;
+	/*height: 270px;*/
+	height: 25vh;
+	background: #ffffff;
+}
+
+.logo {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 9%;
+	padding-right: 9%;
+}
+
+.contactInfo {
+	width: 548px;
+	height: 86px;
+	text-align: right;
+	color: #89B473;
+	font-size: 20px;
+	line-height: 24px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+
+.bannerHero {
+	width: 100%;
+	/*height: 600px;*/
+	height: 75vh;
+	background: #89B473;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	
+}
+
+.bannerContent {
+	width: 100%;
+	/*height: 569px;*/
+	height: 95%; 
+	padding-left: 9%;
+	background: url('../rsc/img/bannerHeroBack.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	/*background-position: 50% 20%;*/
+	background-position: 85% 20%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	
+}
+
+.bannerContentTextMobile {
+	display: none;
+}
+
+.bannerContentText {
+	width: 480px;
+	height: 70%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bannerContent h1, .bannerContent p {
+	color: white;
+}
+
+.siteFeatures {
+	width: 100%;
+	height: 1548px;
+}
+
+.featuresContainer {
+	width: 100%;
+	height: 50%;
+	display: flex;
+}
+
+.featuresContainerText, .featuresContainerImg {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.featuresTextContent {
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.contentA {
+	width: 531px;
+	height: 300px;
+
+}
+
+.contentB {
+	width: 531px;
+	height: 338px;
+}
+
+.featuresTextContent h2 {
+	color: #89B473;
+}
+
+.featuresTextContent p {
+	width: 479px;
+}
+
+
+
+.one {
+	background: url('../rsc/img/features1.jpg');
+}
+
+.two {
+	background: url('../rsc/img/features2.jpg');
+}
+
+
+
+.columContainer{
+	width: 100%;
+	height: 546px;
+	background: #89B473;
+
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.column {
+	width: 33.33%;
+	height: 515px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.three {
+	background: url('../rsc/img/lowcost.jpg');
+}
+
+.four {
+	background: url('../rsc/img/simplefast.jpg');
+}
+
+.five {
+	background: url('../rsc/img/flexivletailored.jpg');
+}
+
+.columnTextBox {
+	width: 581px;
+	height: 192px;
+	color: white;
+	text-align: center;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.columnTextBox h3, .columnTextBox p {
+	margin: 0;
+}
+
+.columnTextBox h3 {
+	width: 100%;
+	height: 90px;
+}
+
+.columnTextBox p {
+	width: 100%;
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 24px;
+	height: 70px;
+}
+
+.finalSection {
+	width: 100%;	
+	height: 774px;
+	display: flex;
+	flex-wrap: wrap;
+	background: #030609;
+}
+
+.finalSectionContent {
+	height: 100%;
+	width: 100%;
+	display: flex;	
+}
+
+.contentColumn {
+	width: 45%;
+	height: 100%;
+	color: #E0E0E0;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+}
+
+.contentColumn h2 {
+	margin-bottom: 30px;
+}
+
+.contentColumn p {
+	width: 485px;
+	margin-top: 30px;
+}
+.wide {
+	width: 55%;
+	padding-right: 7%;
+}
+
+.six {
+	background: url('../rsc/img/helptogrow.jpg');
+}
+
+.seven {
+	background: #030609;
+}
+
+.last {
+	padding-left: 7%;
+}
+
+
+
+.contentColumnTextQuote {
+	width: 90%;
+	height: 58%;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.signature {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.wide img {
+	width: 100%; 
+}
+
+
+footer {
+	width: 100%;
+	height: 185px;
+	background: #89B473;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #E0E0E0;
+}
+
+
+
+
+
+
+
+
+/******************/
+/* MEDIA QUERIES */
+/*****************/
+/* SMART TV */
+@media screen and (min-width: 1921px) {} 
+/* DESKTOP */
+@media screen and (max-width: 1920px) {}  
+/* laptop */
+@media screen and (max-width: 1680px) {
+	.logo {
+		padding-right: 6%;
+	}
+
+	.bannerContent {
+		background: url('../rsc/img/bannerHeroBack 1680.jpg');
+		background-position: right center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.logo, .bannerContent {
+		padding-left: 10%;
+	}
+
+	.bannerContentText {
+	    height: 48%;
+	}
+
+	.columnTextBox {
+	    width: 508px;
+	    height: 229px;
+	}
+
+}
+
+/* laptop */
+@media screen and (max-width: 1600px) {
+
+	h1, h2 {
+		font-size: 55px;
+		font-weight: normal;
+		line-height: 68px;
+		margin: 0;
+	}
+
+	h3 {
+		font-weight: normal;
+		font-size: 35px;
+		line-height: 43px;
+		margin: 0;
+	}
+
+	.logo {
+		padding-right: 6.5%;
+	}
+
+	.bannerContentText {
+	    height: 56%;
+	}
+
+	.contentB {
+	    height: 336px;
+	}
+
+	footer {
+		height: 165px;
+	}
+
+
+}
+
+@media screen and (max-width: 1536px) {
+
+	.logo, .bannerContent {
+		padding-left: 7%;
+	}
+
+	.contentColumn {
+	    width: 46%;
+	}
+
+	.wide {
+		width: 54%;
+	}
+
+	.columnTextBox {
+	    width: 497px;
+	    height: 229px;
+	}
+
+}
+
+
+@media screen and (max-width: 1440px) {
+
+	.bannerContent {
+
+		background-position: 100% 20%;
+	}
+
+	.column  {
+		padding: 10px;
+	}
+
+	.six {
+		background-position: 50% 50%;
+	}
+
+}
+
+
+
+@media screen and (max-width: 1400px) {
+
+	.logo, .bannerContent {
+		padding-left: 6%;
+	}
+
+	.bannerContent {
+		background: url('../rsc/img/bannerHeroBack 1500.jpg');
+		background-position: right center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 87% 20%;
+	}
+
+	.bannerContentText {
+	    width: 397px;
+	}
+
+	footer {
+		height: 100px;
+
+	}
+}
+
+/* laptop */
+@media screen and (max-width: 1366px) {
+
+	.columnTextBox {
+		padding: 8px;
+	}
+
+	.bannerContentText {
+	    height: 67%;
+	}
+
+	.bannerContentText {
+	    width: 482px;
+	}
+
+	.contentColumn {
+	    width: 45%;
+	}
+
+}
+
+
+/* laptop */
+@media screen and (max-width: 1280px) {
+
+	.bannerContent {
+		background-position: 60% 20%;
+	}
+
+	.contentColumnTextQuote h3 {
+		font-size: 32px;
+		line-height: 41px;
+	}
+}
+
+/* laptop */
+@media screen and (max-width: 1152px) {
+
+}
+
+/* laptop */
+@media screen and (max-width: 1024px) {
+	.featuresTextContent {
+		padding: 10px;
+	}
+
+	.contentColumnTextQuote h3 {
+		font-size: 28px;
+		line-height: 37px;
+	}
+
+	.contentColumn p {
+	    width: 416px;
+	   
+	}
+
+	.bannerContent {
+	    background-position: 50% 20%;
+	}
+
+	.one {
+	
+		background-position: center center;
+	}
+
+	.two {
+		
+		background-position: center center;
+	}
+}
+
+/* laptop */
+@media screen and (max-width: 800px) {
+	h1, h2 {
+		font-size: 35px;
+		font-weight: normal;
+		line-height: 44px;
+		margin: 0;
+	}
+
+	h3 {
+		font-weight: normal;
+		font-size: 25px;
+		line-height: 38px;
+		margin: 0;
+	}
+
+
+	p {
+		font-size: 15px;
+		line-height: 26px;
+		margin: 0;
+	}	
+
+	.greenDoorLogo {
+		width: 100px;
+	}
+
+	.bannerContentText {
+	    width: 324px;
+	    height: 271px;
+	 }
+
+	.featuresTextContent p {
+		width: 366px;
+	}
+
+	.columnTextBox {
+
+    	height: 229px;
+	}
+
+
+	.contentColumnTextQuote h3 {
+	    font-size: 23px;
+	    line-height: 32px;
+	}
+
+	.one, .two, .three, .four, .five, .seven {
+		background-position: center center;
+	}
+
+	.six {
+
+    	background-position: 35% 50%;
+	}
+
+	.contentColumn p {
+	    width: 95%;
+	}
+
+	
+}
+
+/* tablet */
+@media screen and (max-width: 768px) {
+
+	h1{
+	    font-size: 50px;
+	    font-weight: normal;
+	    line-height: 62px;
+	    margin: 0;
+	}
+
+	h2{
+		font-size: 26px;
+		line-height: 31px;
+	}
+
+	p {
+		font-size: 20px;
+	}
+
+	.contactInfo {
+	    width: 365px;
+	    height: 106px;
+	}
+
+	.bannerContentText {
+	    width: 327px;
+	    height: 433px;
+	}
+
+	.siteFeatures {
+		height: 646px;
+	}
+
+
+	.featuresTextContent {
+	    width: 258px;
+	    height: 176px;
+	    padding: 0;
+	}
+
+	.featuresTextContent p {
+	    width: 100%;
+	    font-size: 13px;
+	    line-height: 15px;
+	}
+
+	.one {
+		background: url('../rsc/img/features1Mobile.jpg');
+		background-position: center center;
+	}
+
+	.two {
+		background: url('../rsc/img/features2Mobile.jpg');
+		background-position: center center;
+	}
+
+	.columContainer {
+		height: 205px;
+	}
+
+	.column {
+		height: 100%;
+	}
+
+	.column h3 {
+		font-size: 20px;
+		line-height: 24px;
+	}
+
+	.column p {
+		font-size: 8px;
+		line-height: 10px;
+	}
+
+	.columnTextBox {
+		width: 200px;
+		height: 120px;
+		padding:0;
+	}
+
+	.three {
+		background: url('../rsc/img/lowcost-mobile.jpg');
+	}
+
+	.four {
+		background: url('../rsc/img/simplefast-mobile.jpg');
+	}
+
+	.five {
+		background: url('../rsc/img/flexivletailored-mobile.jpg');
+	}
+
+	.finalSection {
+		height: 309px;
+	}
+
+	.six {
+		background: url('../rsc/img/helptogrow-mobile.jpg');
+	}
+
+	.finalSection p {
+		font-size: 13px;
+		line-height: 15px;
+	}
+
+	.finalSection h2, .finalSection p {
+		width: 240px;
+	}
+
+	.contentColumn {
+		height: 85%;
+	}
+
+	.contentColumn h2 {
+	    margin-bottom: 10px;
+	}
+
+	.contentColumn p {
+		margin-top: 10px;
+	}
+
+	footer {
+		height: 75px;
+	}
+
+	footer p {
+		font-size: 13px;
+	}
+
+}
+
+/* tablet */
+@media screen and (max-width: 540px) {
+
+	h1 {
+		font-size: 41px;
+		line-height: 63px;
+	}
+
+	p {
+		font-size: 18px;
+	}
+
+	.bannerContentText {
+	    width: 287px;
+	   
+	}
+
+	.column h3 {
+	    font-size: 17px;
+	    line-height: 23px;
+	}
+
+	.six {
+		background-position: 28% 50%;
+	}
+}
+
+/* smat phone */
+@media screen and (max-width: 478px) {
+
+	h1 {
+		font-size: 20px;
+		line-height: 24px;
+		text-align: center;
+	}
+
+	p {
+		font-size: 12px;
+		line-height: 14px;
+	}
+
+	.contactInfo {
+	    width: 244px;
+	    height: 67px;
+	}
+
+	.bannerHero {
+		flex-direction: column;
+	}
+
+	.bannerContent {
+		height: 48vh;
+		background: url('../rsc/img/BannerHero-mobile.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.bannerContentText {
+		display: none;
+	}
+
+	.bannerContentTextMobile {
+		display: block;
+		color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		padding: 1% 8%;
+		height: 22vh;
+		margin-top: 10px;
+	}
+
+	.bannerContentTextMobile p {
+		text-align: center;
+	}
+
+	.siteFeatures {
+		height: 746px;
+	}
+
+	.featuresContainer {
+		flex-direction: column;
+	}
+
+	.featuresContainerImg, .featuresContainerText {
+		width: 100%;
+	}
+
+	.featuresContainerImg {
+		height: 223px;
+	}
+
+	.featuresContainerText {
+		height: 150px;
+
+	}
+
+	.featuresTextContent{
+		width: 100%;
+		justify-content: space-around;
+		align-items: center;
+		text-align: center;
+		padding: 4% 7%;
+	}
+
+	.secondFCont {
+		flex-direction: column-reverse;
+	}
+
+	.one {
+		background: url('../rsc/img/features1Mobile2.jpg');
+		background-size: cover;
+		background-position: center;
+	}
+
+	.two {
+		background: url('../rsc/img/features2Mobile2.jpg');
+		background-size: cover;
+		background-position: center;
+	}
+
+	.columContainer {
+		height: 360px;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	.column {
+		width: 100%;
+		height: 116px;
+		justify-content: flex-start;
+		padding: 3px;
+		padding-left: 30px;
+	}
+
+	.three {
+		background: url('../rsc/img/lowcost-mobile2.jpg');
+		background-size: cover;
+		background-position: center;
+	}
+
+	.four {
+		background: url('../rsc/img/simplefast-mobile2.jpg');
+		background-size: cover;
+		background-position: center;
+	}
+
+	.five {
+		background: url('../rsc/img/flexivletailored-mobile2.jpg');
+		background-size: cover;
+		background-position: center;
+	}
+
+	.columnTextBox {
+		width: 100%;
+		height: 100%;
+		text-align: left;
+		width: 439px;
+		justify-content: space-around;
+		align-items: flex-start;
+	}
+
+	.columnTextBox h3 {
+		font-size: 22px;
+		line-height: 26px;
+		height: auto;
+		width: 238px;
+		text-align: left;
+	}
+
+	.columnTextBox p {
+		font-size: 11px;
+		line-height: 13px;
+		height: auto;
+	}
+
+	.finalSection {
+		height: 296px;
+	}
+
+	.six {
+		background: url('../rsc/img/helpgrow-mobile2.jpg');
+		background-size: cover;
+		background-position: center;
+	}
+
+	.wide {
+		display: none;
+	}
+
+	.contentColumn {
+		width: 100%;
+		align-items: flex-end;
+		height: 87%;
+	}
+
+	.finalSection h2 {
+		width: 100%;
+		text-align: center;
+		font-size: 25px;
+		line-height: 26px;
+		margin-bottom: 6px;
+	}
+
+	.finalSection p {
+		width: 160px;
+    	margin-right: 80px;
+	}
+
+}
+
+/* smart phone */
+@media screen and (max-width: 414px) {
+
+	.bannerContent {
+	    height: 56vh;
+	}
+
+	.bannerContentTextMobile {
+		padding: 1% 1%;
+	}
+
+	.finalSection p {
+		width: 160px;
+    	margin-right: 43px;
+	}
+
+	footer p {
+		font-size: 11px;
+	}
+
+}
+
+/* smart phone */
+@media screen and (max-width: 390px) {
+
+	h1{
+		font-size: 18px;
+	}
+
+	.bannerContent {
+	   height: 48vh;
+	}
+
+	.bannerContentTextMobile {
+    	height: 24vh;
+
+    }
+
+    .contactInfo {
+	    width: 202px;
+	}
+
+}
+
+/* smart phone */
+@media screen and (max-width: 375px) {
+
+	.bannerContent {
+		height: 42vh;
+	}
+
+	.bannerContentTextMobile {
+    	height: 31vh;
+	    padding: 3%;
+	}
+
+	.finalSection p {
+	    width: 160px;
+	    margin-right: 26px;
+	}
+}
+
+/* smart phone */
+@media screen and (max-width: 360px) {
+	h1 {
+	    font-size: 16px;
+	}
+	.bannerContent {
+	    height: 60vh;
+	}
+
+	.bannerContentTextMobile {
+	    height: 22vh;
+	    padding: 1% 5%;
+	    margin-top: 8px;
+	}
+
+	.finalSection p {
+	    margin-right: 23px;
+	}
+
+
+	footer p {
+		font-size: 9px;
+	}
+
+}
+
+/* Smart watch */
+@media screen and (max-width: 320px) {
+	h1 {
+	    font-size: 14px;
+	}
+	p {
+    font-size: 8px;
+    line-height: 15px;
+}
+}
+
+
+/* ANIMACIONES */
+
+@keyframes animaciones {}
